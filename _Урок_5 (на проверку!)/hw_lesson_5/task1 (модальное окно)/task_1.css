@@ -1,0 +1,36 @@
+.b-btn {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+}
+.b-modal {
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    padding-top: 30px;
+    margin: 50px 0 0 300px;
+    outline: 1px solid rgb(80, 136, 240);
+    background-color: rgb(240, 244, 250);
+    display: block;
+}
+.b-modal__close {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid rgb(80, 136, 240);
+    color: rgb(80, 136, 240);
+    line-height: 0.9;
+    position: relative;
+    top: -40px;
+    left: 288px;
+    
+}
+.b-modal__close:hover {
+    background-color: rgb(164, 207, 243);
+    cursor: pointer;
+}
+
+.b-modal_hide {
+    display: none;
+}

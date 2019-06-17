@@ -1,0 +1,25 @@
+.product {
+  float: left;
+  padding: 10px;
+  width: 200px;
+}
+.product img {
+  width: 200px;
+  height: 366px;
+}
+.product button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.productName {
+    text-align: center;
+}
+.img__hide {
+  display: none;
+}
+.product p {
+    height: 351px;
+    margin: 0;
+    padding: 10px 5px;
+}
