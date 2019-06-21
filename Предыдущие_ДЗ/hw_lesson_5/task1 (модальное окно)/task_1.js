@@ -1,4 +1,4 @@
-'sue strict';
+'use strict';
 let modal = document.querySelector('.b-modal');
 let button = document.querySelector('.b-btn');
 let close = document.querySelector('.b-modal__close');
