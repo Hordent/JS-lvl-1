@@ -5,12 +5,13 @@ let basketBtn = document.querySelector('.header_basketBtn');
 
 
 basketBtn.addEventListener('click', function (event) {
-    modalWindow.hide();
+    modalWindow.show();
     modalWindow.refresh();
+    modalWindow.addBtnEvents();
 });
 
 modalWindow.modalClose.addEventListener('click', function (event) {
-    modalWindow.window.classList.add('b-modal_hide');
+    modalWindow.hide();
 });
 
 //Работа с карточками товара
@@ -23,6 +24,7 @@ productBtns.forEach(function (element) {
         let productPrice = +productCard.querySelector('.product_price').innerText;
         basket.addProduct(productId, productName, productPrice);
         modalWindow.refresh();
+        modalWindow.addBtnEvents();
 
     });
 });

@@ -12,7 +12,7 @@ let basket = {
         let basketId = this.getBasketId(id);
 
         if (basketId === null) {
-            let newItem = new basketItem;
+            let newItem = new productItem;
             newItem.id = id;
             newItem.name = name;
             newItem.price = price;
@@ -25,10 +25,16 @@ let basket = {
     },
 
     removeOneProduct(id) {
-
+        let basketId = this.getBasketId(id);
+        if (this.basketList[basketId].qty === 1) {
+            this.basketList.splice(basketId, 1);
+        } else {
+            this.basketList[basketId].qty--;
+        }
     },
     removeAllProducts(id) {
-
+        let basketId = this.getBasketId(id);
+        this.basketList.splice(basketId, 1);
     },
 
     /**
@@ -54,7 +60,7 @@ let basket = {
     }
 }
 
-class basketItem {
+class productItem {
     id = "";
     name = "";
     price = "";
